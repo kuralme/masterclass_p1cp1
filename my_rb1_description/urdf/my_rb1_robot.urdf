@@ -95,7 +95,7 @@
   </link>
 
   <!-- Joint/Link - front caster -->
-  <joint name="joint_front_caster" type="continuous">
+  <joint name="joint_front_caster" type="fixed">
     <origin rpy="0 0 0" xyz="0.1 0.0 -0.15"/>
     <child link="front_caster"/>
     <parent link="base_link"/>
@@ -127,7 +127,7 @@
   </link>
 
   <!-- Joint/Link - back caster -->
-  <joint name="joint_back_caster" type="continuous">
+  <joint name="joint_back_caster" type="fixed">
     <origin rpy="0 0 0" xyz="-0.1 0.0 -0.15"/>
     <child link="back_caster"/>
     <parent link="base_link"/>
@@ -174,7 +174,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.075"/>
+        <cylinder length="0.02" radius="0.03"/>
       </geometry>
       <material name="Black">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -183,7 +183,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.075"/>
+        <cylinder length="0.02" radius="0.03"/>
       </geometry>
     </collision>
   </link>
