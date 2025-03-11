@@ -24,8 +24,8 @@
       <geometry>
         <cylinder length="0.3" radius="0.25"/>
       </geometry>
-      <material name="DarkBlue">
-        <color rgba="0.2 0.2 0.4 1"/>
+      <material name="Black">
+        <color rgba="0.1 0.1 0.1 1"/>
       </material>
     </visual>
   </link>
@@ -56,8 +56,8 @@
       <geometry>
         <cylinder length="0.02" radius="0.025"/>
       </geometry>
-      <material name="Red">
-        <color rgba="0.4 0.2 0.2 1"/>
+      <material name="Blue">
+        <color rgba="0.1 0.1 0.4 1"/>
       </material>
     </visual>
   </link>
@@ -88,8 +88,8 @@
       <geometry>
         <cylinder length="0.02" radius="0.025"/>
       </geometry>
-      <material name="Red">
-        <color rgba="0.4 0.2 0.2 1"/>
+      <material name="Blue">
+        <color rgba="0.1 0.1 0.4 1"/>
       </material>
     </visual>
   </link>
@@ -120,8 +120,8 @@
       <geometry>
         <sphere radius="0.025"/>
       </geometry>
-      <material name="Black">
-        <color rgba="0.1 0.1 0.1 1"/>
+      <material name="Blue">
+        <color rgba="0.1 0.1 0.4 1"/>
       </material>
     </visual>
   </link>
@@ -152,8 +152,8 @@
       <geometry>
         <sphere radius="0.025"/>
       </geometry>
-      <material name="Black">
-        <color rgba="0.1 0.1 0.1 1"/>
+      <material name="Blue">
+        <color rgba="0.1 0.1 0.4 1"/>
       </material>
     </visual>
   </link>
@@ -176,8 +176,8 @@
       <geometry>
         <cylinder length="0.05" radius="0.075"/>
       </geometry>
-      <material name="Black">
-        <color rgba="0.1 0.1 0.1 1"/>
+      <material name="Red">
+        <color rgba="0.4 0.1 0.1 1"/>
       </material>
     </visual>
     <collision>
@@ -187,5 +187,33 @@
       </geometry>
     </collision>
   </link>
+
+
+  <gazebo reference="base_link">
+      <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="front_caster">
+      <material>Gazebo/Blue</material>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+  </gazebo>
+  <gazebo reference="back_caster">
+      <material>Gazebo/Blue</material>
+      <mu1>0</mu1>
+      <mu2>0</mu2>
+  </gazebo>
+  <gazebo reference="left_wheel">
+      <material>Gazebo/Blue</material>
+      <mu1>1</mu1>
+      <mu2>1</mu2>
+  </gazebo>
+  <gazebo reference="right_wheel">
+      <material>Gazebo/Blue</material>
+      <mu1>1</mu1>
+      <mu2>1</mu2>
+  </gazebo>
+  <gazebo reference="front_laser">
+      <material>Gazebo/Red</material>
+  </gazebo>
 </robot>
 
